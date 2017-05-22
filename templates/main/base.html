@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Department</title>
+    <link rel="stylesheet" href="{% static 'slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+{% include 'main/header.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+<footer>
+    <div class="grid">
+        <ul class="share">
+            <li class="gmail"><a class="social " href="#"></a></li>
+            <li class="twitter"><a class="social " href="#"></a></li>
+            <li class="facebook"><a class="social " href="#"></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="{% static 'script/jquery-3.1.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+<script src="{% static 'script/js.js' %}"></script>
+</body>
+</html>

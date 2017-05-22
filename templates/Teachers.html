@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+
+{% load staticfiles %}
+
+{% block content %}
+    <main>
+        <div class="grid">
+            <ul class="teachers">
+                {% for item in teacher %}
+                    <li><a href="{% url 'single_teacher' id=item.id %}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+
+{% endblock %}

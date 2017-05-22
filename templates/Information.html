@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <main>
+        <div class="grid">
+            {% for item in info %}
+                <div class="information">
+                    <h4>{{ item.title }}</h4>
+                    <p class="group"><img src="{{ item.image.url }}">{{ item.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+{% endblock %}
